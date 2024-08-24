@@ -98,7 +98,6 @@ def load_list(file_path):
         print("Error2.")
         return []
 
-smolmonke = load_list("smolmonke.json")
 kosmos = load_list("kosmos.json")
 #print(kosmos)
 
@@ -118,10 +117,7 @@ async def handle_message(message):
             print(f"{message.author.name} said: {message.content}")
             dmessage = await message.channel.send(random.choice(responses))
             
-            if message.author.id == 1235290447640006699:
-                aimessage = await LocalUwuifyStream(smolmonke, dmessage, message)
-                await save(message, smolmonke, aimessage)
-            elif message.author.id == 456404988290269184:
+            if message.author.id == 456404988290269184:
                 aimessage = await LocalUwuifyStream(kosmos, dmessage, message)
                 await save(message, kosmos, aimessage)
             #audio = tts.get_audio(aimessage)
@@ -145,6 +141,4 @@ except KeyboardInterrupt:
 finally:
     with open('kosmos.json', 'w') as file:
         json.dump(kosmos, file, indent=4)
-    with open('smolmonke.json', 'w') as file:
-        json.dump(smolmonke, file, indent=4)
-    print("Data saved to kosmos.json and smolmonke.json")
+    print("Data saved to kosmos.json")
