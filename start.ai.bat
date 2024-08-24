@@ -1,1 +1,0 @@
-ollama run benevolentjoker/nsfwvanessa:latest
