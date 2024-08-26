@@ -1,4 +1,4 @@
-discord.py-self==2.1.0a
-aiohttp==3.9.5
-pytz==2022.7.1
+discord.py-self
+aiohttp
+pytz
 pydub
