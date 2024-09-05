@@ -3,3 +3,5 @@
 
 ## Launch AI Command 
 ollama run benevolentjoker/nsfwvanessa:latest
+
+### shit is not supposted to work good well it is but shiiiiiiiii its ass
